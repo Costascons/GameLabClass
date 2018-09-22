@@ -35,5 +35,6 @@ public class Timer : MonoBehaviour {
     {
         finished = true;
         timerText.color = Color.red;
+        
     }
 }

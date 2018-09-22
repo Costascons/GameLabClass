@@ -22,7 +22,7 @@ public class Jump : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump"))
             {
-                rb.velocity = new Vector3(0f, 8f, 0f);
+                rb.velocity = new Vector3(3f, 10f, 3f);
                 onGround = false;
             }
         }
