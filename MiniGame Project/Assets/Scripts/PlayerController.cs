@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-
-    
     public Text countText;
     public Text winText;
+    public int count;
+    public int sceneNum;
 
     private Rigidbody rb;
     private float speed;
-    private int count;
 
     void Start()
     {
@@ -21,6 +21,18 @@ public class PlayerController : MonoBehaviour
         winText.text = "";
     }
 
+    void Update()
+    {
+        if (count == 10)
+        {
+            SceneManager.LoadScene("Level 3");
+        }
+
+    }
+
+
+
+
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
@@ -29,6 +41,7 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
         rb.AddForce(movement * speed);
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -48,5 +61,7 @@ public class PlayerController : MonoBehaviour
         {
             winText.text = "Success!";
         }
+
+        
     }
 }

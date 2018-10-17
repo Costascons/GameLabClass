@@ -188,8 +188,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   scoreValue: 10
-  scoreText: {fileID: 0}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!65 &124469857
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -292,8 +293,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   scoreValue: 10
-  scoreText: {fileID: 0}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!65 &178551243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -338,8 +340,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   scoreValue: 10
-  scoreText: {fileID: 0}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!65 &228749896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -384,8 +387,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   scoreValue: 5
-  scoreText: {fileID: 0}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!65 &356973321
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -728,8 +732,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   scoreValue: 5
-  scoreText: {fileID: 0}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!65 &733791509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -852,8 +857,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   scoreValue: 5
-  scoreText: {fileID: 0}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!65 &786832474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1181,6 +1187,22 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 19800004, guid: 09d21678e05231841b7060aaff30933b, type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800004, guid: 09d21678e05231841b7060aaff30933b, type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800004, guid: 09d21678e05231841b7060aaff30933b, type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800004, guid: 09d21678e05231841b7060aaff30933b, type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09d21678e05231841b7060aaff30933b, type: 2}
   m_IsPrefabParent: 0
@@ -1279,8 +1301,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   scoreValue: 5
-  scoreText: {fileID: 0}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!1 &1157556541
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,8 +1433,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   scoreValue: 10
-  scoreText: {fileID: 1218098944}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!1001 &1169981564
 Prefab:
   m_ObjectHideFlags: 0
@@ -1545,8 +1569,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   scoreValue: 5
-  scoreText: {fileID: 0}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!65 &1192926111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1606,7 +1631,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 97ad51f0a4aed0a4289f5462ce6dc18f, type: 2}
+  - {fileID: 2100000, guid: 34347340bffa3a442977a3176a3b943a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1988,8 +2013,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   scoreValue: 10
-  scoreText: {fileID: 0}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!1001 &1578039786
 Prefab:
   m_ObjectHideFlags: 0
@@ -2504,8 +2530,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   scoreValue: 10
-  scoreText: {fileID: 0}
+  ScoreText: {fileID: 0}
   restartDelay: 5
+  scene: 
 --- !u!65 &2077561421
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2591,7 +2618,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c03c72978d15ecb4d91060d3a10d14f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5485e2f56028a3c4cb54f5caa167377e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -26,7 +26,7 @@ public class Shooting : MonoBehaviour {
             if(Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit))
             {
                 //do something if we hit cubes
-                Debug.Log(hit.collider.tag);
+                //Debug.Log(hit.collider.tag);
                 laserLine.SetPosition(1, hit.point);
 
                 if (hit.collider.tag == "cube")
