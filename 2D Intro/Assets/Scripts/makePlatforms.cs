@@ -23,7 +23,7 @@ public class makePlatforms : MonoBehaviour
         {
             //Instantiate (What it is, where it is, what its rotation is)
             GameObject clone = Instantiate(platform, (new Vector2(Random.Range(-10f, 10f), 6f)), Quaternion.identity);
-            clone.transform.localScale = new Vector2(Random.Range(2f, 8f), 1f);
+            clone.transform.localScale = new Vector2(Random.Range(2f, 6f), 6f);
             timer = 0;
         }//Tags allow you to perform an action on multiple objects.
         platforms = GameObject.FindGameObjectsWithTag("platform");
