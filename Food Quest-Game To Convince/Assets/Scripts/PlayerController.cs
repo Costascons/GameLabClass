@@ -12,11 +12,15 @@ public class PlayerController : MonoBehaviour {
     public LayerMask groundLayer;
     private bool isTouchingGround;
     private Animator playerAnimation;
+    public Vector3 respawnPoint;
+    public LevelMaster gameLevelMaster;
 
 	// Use this for initialization
 	void Start () {
         rigidBody = GetComponent<Rigidbody2D>();
         playerAnimation = GetComponent<Animator>();
+        respawnPoint = transform.position;
+        gameLevelMaster = FindObjectOfType<LevelMaster>();
 		
 	}
 	
@@ -24,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
         isTouchingGround = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
         movement = Input.GetAxis("Horizontal");
-        //Debug.Log(movement);
+        
         if(movement > 0f) { 
         rigidBody.velocity = new Vector2(movement * speed, rigidBody.velocity.y);
             transform.localScale = new Vector2(1f, 1f);
@@ -45,4 +49,16 @@ public class PlayerController : MonoBehaviour {
         playerAnimation.SetFloat("Speed", Mathf.Abs(rigidBody.velocity.x));
         playerAnimation.SetBool("OnGround", isTouchingGround);
     }
+     void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Restarter")
+        {
+            gameLevelMaster.Respawn();
+            if(other.tag == "Checkpoint")
+            {
+                respawnPoint = other.transform.position;
+            }
+        }
+    }
+
 }
