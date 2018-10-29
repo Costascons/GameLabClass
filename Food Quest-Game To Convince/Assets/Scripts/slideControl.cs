@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class slideControl : MonoBehaviour
@@ -10,6 +11,7 @@ public class slideControl : MonoBehaviour
     Slider EnergySlider;
     Slider MoneySlider;
     public Text wintext;
+    public string levelToLoad;
     public float somenumber;
 
     // Use this for initialization
@@ -34,6 +36,7 @@ public class slideControl : MonoBehaviour
         else if (EnergySlider.value == 1000)
         {
             wintext.text = "You Lose!";
+            SceneManager.LoadScene(levelToLoad);
         }
        
     }

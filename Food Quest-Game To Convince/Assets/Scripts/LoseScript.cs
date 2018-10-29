@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LoseScript : MonoBehaviour {
     Slider MoneySlider;
     public Text wintext;
+    public string levelToLoad;
 
     // Use this for initialization
     void Start () {
@@ -23,6 +25,7 @@ public class LoseScript : MonoBehaviour {
         else if (MoneySlider.value == 100)
         {
             wintext.text = "You Lose!";
+            SceneManager.LoadScene(levelToLoad);
         }
     }
 }
