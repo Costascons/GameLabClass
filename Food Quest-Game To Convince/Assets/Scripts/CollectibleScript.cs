@@ -26,7 +26,7 @@ public class CollectibleScript : MonoBehaviour {
         if (other.tag == "Player")
         {
             float value1 = EnergySlider.value;
-            EnergySlider.value += itemEnergy;
+            EnergySlider.value -= itemEnergy;
             float value2 = MoneySlider.value;
             MoneySlider.value += itemPrice;
             Destroy(gameObject);

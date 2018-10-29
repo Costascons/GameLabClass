@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class slideControl : MonoBehaviour
 {
-    float timeTracker;
+    //float timeTracker;
     Slider EnergySlider;
     Slider MoneySlider;
     public Text wintext;
+    public float somenumber;
 
     // Use this for initialization
     void Start()
@@ -22,14 +23,15 @@ public class slideControl : MonoBehaviour
     {
          GetComponent<CollectibleScript>();
        
-        timeTracker = Time.time;
-        EnergySlider.value = timeTracker;
+        
+        float val = EnergySlider.value;
+        EnergySlider.value = val + Time.deltaTime + somenumber;
 
         if (EnergySlider.value == 0)
         {
             wintext.text = "";
         }
-        else if (EnergySlider.value == 20)
+        else if (EnergySlider.value == 1000)
         {
             wintext.text = "You Lose!";
         }
