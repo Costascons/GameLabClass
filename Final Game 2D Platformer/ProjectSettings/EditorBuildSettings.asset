@@ -48,5 +48,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Over Scene.unity
     guid: fb9274c12978cf44fbb2d48c96c8fc79
   - enabled: 1
-    path: Assets/Scenes/Temporary Success Scene.unity
+    path: Assets/Scenes/Success Scene.unity
     guid: 6ada2b6767653584ebce253b21c17e56
